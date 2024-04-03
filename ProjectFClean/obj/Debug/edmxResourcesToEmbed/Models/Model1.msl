@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProjectFCleanModelStoreContainer" CdmEntityContainer="ProjectFCleanEntities1">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="ProjectFCleanModel.Account">
+        <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Identify_Number" ColumnName="Identify Number" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Approve" ColumnName="Approve" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="ProjectFCleanModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="AdminID" ColumnName="AdminID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Compacts">
+      <EntityTypeMapping TypeName="ProjectFCleanModel.Compact">
+        <MappingFragment StoreEntitySet="Compact">
+          <ScalarProperty Name="CID" ColumnName="CID" />
+          <ScalarProperty Name="RID" ColumnName="RID" />
+          <ScalarProperty Name="HID" ColumnName="HID" />
+          <ScalarProperty Name="Signed_Date" ColumnName="Signed Date" />
+          <ScalarProperty Name="Work_Time" ColumnName="Work Time" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Compact_detail">
+      <EntityTypeMapping TypeName="ProjectFCleanModel.Compact_detail">
+        <MappingFragment StoreEntitySet="Compact_detail">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="CID" ColumnName="CID" />
+          <ScalarProperty Name="Total_price" ColumnName="Total price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Feedbacks">
+      <EntityTypeMapping TypeName="ProjectFCleanModel.Feedback">
+        <MappingFragment StoreEntitySet="Feedback">
+          <ScalarProperty Name="FbID" ColumnName="FbID" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="HID" ColumnName="HID" />
+          <ScalarProperty Name="RID" ColumnName="RID" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Housekeepers">
+      <EntityTypeMapping TypeName="ProjectFCleanModel.Housekeeper">
+        <MappingFragment StoreEntitySet="Housekeeper">
+          <ScalarProperty Name="HID" ColumnName="HID" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Skill" ColumnName="Skill" />
+          <ScalarProperty Name="Experiment" ColumnName="Experiment" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Money" ColumnName="Money" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payments">
+      <EntityTypeMapping TypeName="ProjectFCleanModel.Payment">
+        <MappingFragment StoreEntitySet="Payment">
+          <ScalarProperty Name="PayID" ColumnName="PayID" />
+          <ScalarProperty Name="RID" ColumnName="RID" />
+          <ScalarProperty Name="HID" ColumnName="HID" />
+          <ScalarProperty Name="CID" ColumnName="CID" />
+          <ScalarProperty Name="Total_price" ColumnName="Total price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Posts">
+      <EntityTypeMapping TypeName="ProjectFCleanModel.Post">
+        <MappingFragment StoreEntitySet="Post">
+          <ScalarProperty Name="PID" ColumnName="PID" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Experience" ColumnName="Experience" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RID" ColumnName="RID" />
+          <ScalarProperty Name="HID" ColumnName="HID" />
+          <ScalarProperty Name="DatePost" ColumnName="DatePost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Renters">
+      <EntityTypeMapping TypeName="ProjectFCleanModel.Renter">
+        <MappingFragment StoreEntitySet="Renter">
+          <ScalarProperty Name="RID" ColumnName="RID" />
+          <ScalarProperty Name="Money" ColumnName="Money" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Services">
+      <EntityTypeMapping TypeName="ProjectFCleanModel.Service">
+        <MappingFragment StoreEntitySet="Service">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="Name_of_service" ColumnName="Name of service" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
